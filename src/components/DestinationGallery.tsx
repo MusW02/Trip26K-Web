@@ -8,7 +8,7 @@ interface Destination {
 const destinations: Destination[] = [
   { name: "Karachi Train Station", image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&q=80" },
   { name: "Business Class Train", image: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=800&q=80" },
-  { name: "Islamabad", image: "/images/islamaabd.jpeg" },
+  { name: "Islamabad", image: "/Trip26K-Web/images/islamaabd.jpeg" },
   { name: "Margalla Hills", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80" },
   { name: "Muzaffarabad", image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80" },
   { name: "Azad Kashmir", image: "https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=800&q=80" },
@@ -20,10 +20,10 @@ const destinations: Destination[] = [
   { name: "Kalam", image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80" },
   { name: "Mahodand Lake", image: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800&q=80" },
   { name: "Ushu Forest", image: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80" },
-  { name: "Malam Jabba", image: "/images/malam.jpeg" },
-  { name: "Lahore", image: "/images/lahore.jpeg" },
-  { name: "Badshahi Mosque", image: "/images/Badshahi_Mosque_front_picture.jpg" },
-  { name: "Food Street Lahore", image: "/images/Food_Street_Lahore.jpg" },
+  { name: "Malam Jabba", image: "/Trip26K-Web/images/malam.jpeg" },
+  { name: "Lahore", image: "/Trip26K-Web/images/lahore.jpeg" },
+  { name: "Badshahi Mosque", image: "/Trip26K-Web/images/Badshahi_Mosque_front_picture.jpg" },
+  { name: "Food Street Lahore", image: "/Trip26K-Web/images/Food_Street_Lahore.jpg" },
 ];
 
 const DestinationGallery = () => {
