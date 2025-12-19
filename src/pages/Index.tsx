@@ -67,7 +67,7 @@ const Index = () => {
           <div className="text-center max-w-4xl mx-auto">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm mb-6 animate-fade-up">
               <Mountain className="w-4 h-4" />
-              <span>January 9-20, 2025</span>
+              <span>January 9-20, 2026</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 animate-fade-up" style={{ animationDelay: '0.1s' }}>
