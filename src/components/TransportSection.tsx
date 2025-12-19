@@ -1,9 +1,9 @@
 import { Car } from "lucide-react";
 
 const transportImages = [
-  "/images/greenline.jpeg",
-  "/images/grandcabin.jpeg",
-  "/images/faisalmovers.jpeg",
+  "/Trip26K-Web/images/greenline.jpeg",
+  "/Trip26K-Web/images/grandcabin.jpeg",
+  "/Trip26K-Web/images/faisalmovers.jpeg",
 ];
 
 const TransportSection = () => {
