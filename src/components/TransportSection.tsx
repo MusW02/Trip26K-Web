@@ -35,7 +35,7 @@ const TransportSection = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-earth/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="text-primary-foreground font-medium">Toyota Grand Cabin</p>
+                <p className="text-primary-foreground font-medium"></p>
                 <p className="text-primary-foreground/70 text-sm">Comfort for the journey</p>
               </div>
             </div>
