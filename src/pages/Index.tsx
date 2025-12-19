@@ -9,47 +9,47 @@ const Index = () => {
     { 
       name: "Mustafa", 
       role: "BOP", 
-      image: "/images/me.png" 
+      image: "/Trip26K-Web/images/me.png" 
     },
     { 
       name: "Bilal", 
       role: "Bilal-Asif Lord/Party/Daku", 
-      image: "/images/bilal.jpeg" 
+      image: "/Trip26K-Web/images/bilal.jpeg" 
     },
     { 
       name: "Rayan", 
       role: "King/God", 
-      image: "/images/rayan.png" 
+      image: "/Trip26K-Web/images/rayan.png" 
     },
     { 
       name: "Sheharyar", 
       role: "Attitude Boy", 
-      image: "/images/sher.JPG" 
+      image: "/Trip26K-Web/images/sher.JPG" 
     },
     { 
       name: "Arman", 
       role: "Lassi/Goga/Dairy Milk/Lahori/Off", 
-      image: "/images/lassi.png" 
+      image: "/Trip26K-Web/images/lassi.png" 
     },
     { 
       name: "Anas", 
       role: "Nalki/Shorty/Chotu/Kid", 
-      image: "/images/nalki.png" 
+      image: "/Trip26K-Web/images/nalki.png" 
     },
     { 
       name: "Mujtaba", 
       role: "Downie/Fake ACL", 
-      image: "/images/downie.png" 
+      image: "/Trip26K-Web/images/downie.png" 
     },
     { 
       name: "Aman", 
       role: "Abba Nahi Manay Ge", 
-      image: "/images/aman.jpeg" 
+      image: "/Trip26K-Web/images/aman.jpeg" 
     },
     { 
       name: "Ishaq", 
       role: "Dollar/Nalla", 
-      image: "/images/dollar.jpeg" 
+      image: "/Trip26K-Web/images/dollar.jpeg" 
     },
   ];
 
