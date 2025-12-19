@@ -15,7 +15,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/Trip26K-Web">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/itinerary" element={<Itinerary />} />
