@@ -1,3 +1,4 @@
+import Admin from "./pages/Admin";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/itinerary" element={<Itinerary />} />
           <Route path="/costs" element={<Costs />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

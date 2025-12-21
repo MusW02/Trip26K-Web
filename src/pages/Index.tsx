@@ -2,56 +2,9 @@ import { Mountain, MapPin, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import TravelerCard from "@/components/TravelerCard";
-
+import { travelers } from "@/data/travelers";
 const Index = () => {
-  // 👇 EDIT THIS LIST with your actual squad details
-  const travelers = [
-    { 
-      name: "Mustafa", 
-      role: "BOP", 
-      image: "/images/me.png" 
-    },
-    { 
-      name: "Bilal", 
-      role: "Bilal-Asif Lord/Party/Daku", 
-      image: "/images/bilal.jpeg" 
-    },
-    { 
-      name: "Rayan", 
-      role: "King/God", 
-      image: "/images/rayan.png" 
-    },
-    { 
-      name: "Sheharyar", 
-      role: "Attitude Boy", 
-      image: "/images/sher.JPG" 
-    },
-    { 
-      name: "Arman", 
-      role: "Lassi/Goga/Dairy Milk/Lahori/Off", 
-      image: "/images/lassi.png" 
-    },
-    { 
-      name: "Anas", 
-      role: "Nalki/Shorty/Chotu/Kid", 
-      image: "/images/nalki.png" 
-    },
-    { 
-      name: "Mujtaba", 
-      role: "Downie/Fake ACL", 
-      image: "/images/downie.png" 
-    },
-    { 
-      name: "Aman", 
-      role: "Abba Nahi Manay Ge", 
-      image: "/images/aman.jpeg" 
-    },
-    { 
-      name: "Ishaq", 
-      role: "Dollar/Nalla", 
-      image: "/images/dollar.jpeg" 
-    },
-  ];
+  
 
   return (
     <div className="min-h-screen bg-background">
