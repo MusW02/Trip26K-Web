@@ -20,7 +20,7 @@ const Admin = () => {
 
   // Simple Password Check
   const handleLogin = () => {
-    if (password === "1234") { // 👈 You can change this password
+    if (password === "1234") { 
       setIsAuthenticated(true);
       toast.success("Welcome, Admin!");
     } else {
@@ -34,10 +34,15 @@ const Admin = () => {
     setLoading(true);
     setLogs([]);
 
-    // Calculate Days Left
-    const tripDate = new Date("2025-01-09"); // 👈 Check this date!
+    // 1. Precise Time Calculation
+    const tripDate = new Date("2026-01-09T00:00:00"); // Start of the trip day
     const today = new Date();
-    const diffTime = Math.ceil((tripDate.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+    const diffMs = tripDate.getTime() - today.getTime(); // Difference in milliseconds
+
+    // Calculate generic units
+    const daysLeft = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+    const hoursLeft = Math.floor((diffMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutesLeft = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
 
     let successCount = 0;
 
@@ -53,14 +58,17 @@ const Admin = () => {
           TEMPLATE_ID,
           {
             to_name: person.name,
-            to_email: person.email, // This matches the {{to_email}} we set in the dashboard
-            days_left: diffTime,
+            to_email: person.email,
+            // 👇 Sending all 3 new variables
+            days_left: daysLeft,
+            hours_left: hoursLeft,
+            minutes_left: minutesLeft,
           },
           PUBLIC_KEY
         );
         successCount++;
         setLogs(prev => [...prev, `✅ Sent to ${person.name}`]);
-      } catch (error) {
+      } catch (error: any) {
         console.error(error);
         setLogs(prev => [...prev, `❌ Failed: ${person.name}`]);
       }
@@ -69,7 +77,6 @@ const Admin = () => {
     setLoading(false);
     if (successCount > 0) toast.success(`Sent ${successCount} emails!`);
   };
-
   if (!isAuthenticated) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
