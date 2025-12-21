@@ -1,9 +1,9 @@
 import { Car } from "lucide-react";
 
 const transportImages = [
-  "/images/greenline.jpeg",
-  "/images/grandcabin.jpeg",
-  "/images/faisalmovers.jpeg",
+  "/Trip26K-Web/images/greenline.jpeg",
+  "/Trip26K-Web/images/grandcabin.jpeg",
+  "/Trip26K-Web/images/faisalmovers.jpeg",
 ];
 
 const TransportSection = () => {
@@ -17,8 +17,9 @@ const TransportSection = () => {
           </h2>
         </div>
         
+        {/* 👇 Changed to generic text */}
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Travel in comfort with the Toyota Grand Cabin - perfect for our mountain adventures
+          Traveling in comfort from Karachi to the Mountains.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -30,14 +31,12 @@ const TransportSection = () => {
             >
               <img
                 src={image}
-                alt={`Toyota Grand Cabin ${index + 1}`}
+                alt={`Transport mode ${index + 1}`} // Generic Alt text
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-earth/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="text-primary-foreground font-medium">Toyota Grand Cabin</p>
-                <p className="text-primary-foreground/70 text-sm">Comfort for the journey</p>
-              </div>
+              {/* I REMOVED the "div" that was here previously. 
+                 Now nothing will pop up on hover. 
+              */}
             </div>
           ))}
         </div>
