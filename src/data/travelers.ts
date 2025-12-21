@@ -4,7 +4,7 @@ export const travelers = [
       name: "Mustafa", 
       role: "BOP", 
       image: "/Trip26K-Web/images/me.png",
-      email: "mustafa.waqar02@gmail.com" 
+      email: "k224020@nu.edu.pk" 
     },
     { 
       name: "Bilal", 
