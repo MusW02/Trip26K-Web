@@ -29,7 +29,7 @@ const checklistData = [
     icon: <Droplets className="w-6 h-6 text-primary" />,
     items: [
       {
-        name: 'Cold Cream / Vaseline (Large Tub)',
+        name: 'Cold Cream / Vaseline',
         description: 'CRITICAL - Skin cracks in -10°C. Apply morning and night.',
         critical: true,
       },
@@ -40,12 +40,12 @@ const checklistData = [
         critical: true,
       },
       { name: 'Deodorant / Perfume', description: '9 guys in a van for 12 days... absolutely essential' },
-      { name: 'Hand Sanitizer (Large Bottle)', description: 'For use before eating on the road' },
+      { name: 'Hand Sanitizer', description: 'For use before eating on the road' },
       { name: 'Toothbrush & Toothpaste', description: 'Basic dental hygiene' },
       { name: 'Soap / Body Wash', description: 'Travel-sized or small bar' },
       { name: 'Towel', description: 'Quick-dry towel preferred' },
       { name: 'Toilet Paper / Tissues', description: 'Important - Not all places have proper facilities', critical: true },
-      { name: 'Wet Wipes / Baby Wipes', description: 'For quick cleaning when water is not available' },
+      { name: 'Wet Wipes', description: 'For quick cleaning when water is not available' },
       { name: 'Comb / Hair Brush', description: 'Keep yourself presentable' },
     ],
   },
@@ -84,10 +84,10 @@ const checklistData = [
         description: 'Good grip essential for Arang Kel. NO flat-sole shoes.',
         critical: true,
       },
-      { name: 'Hoodies (2-3)', description: 'Mid-layer for warmth. Cotton or fleece.' },
-      { name: 'Sweatshirts (2)', description: 'Additional layering option' },
-      { name: 'Extra Pants / Jeans (2-3)', description: 'Comfortable for long drives and hiking' },
-      { name: 'Casual T-shirts (3-4)', description: 'Base layer under thermals' },
+      { name: 'Hoodies', description: 'Mid-layer for warmth. Cotton or fleece.' },
+      { name: 'Sweatshirts', description: 'Additional layering option' },
+      { name: 'Extra Pants / Jeans', description: 'Comfortable for long drives and hiking' },
+      { name: 'Casual T-shirts', description: 'Base layer under thermals' },
       { name: 'Undergarments (Sufficient for 12 days)', description: 'Thermal or regular' },
       { name: 'Extra Pair of Shoes', description: 'In case primary shoes get wet or damaged' },
     ],
@@ -104,7 +104,6 @@ const checklistData = [
       { name: 'Cash (PKR 3000-10,000)', description: 'For emergencies, snacks, and personal expenses' },
       { name: 'Emergency Contact Numbers', description: 'Written on paper - in case phone dies' },
       { name: 'Medical Prescriptions', description: 'If you take regular medication' },
-      { name: 'Insurance Card', description: 'If you have travel/health insurance' },
     ],
   },
   {
@@ -239,7 +238,7 @@ const Checklist = () => {
               {
                 title: 'Pack Light, Pack Right',
                 description:
-                  "We're moving locations every day. One backpack (40-50L) per person. If you can't carry it for 30 minutes, it's too heavy.",
+                  "We're moving locations every day. If you can't carry it for 30 minutes, it's too heavy.",
                 icon: '🎒',
               },
               {
