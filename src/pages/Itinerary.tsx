@@ -13,10 +13,11 @@ const itineraryData = [
   { date: "14 Jan", day: "Wednesday", route: "Travel: Balakot → Swat → Malam Jabba", nightStay: "Malam Jabba" },
   { date: "15 Jan", day: "Thursday", route: "Travel: Malam Jabba → Bahrain → Kalam", nightStay: "Kalam" },
   { date: "16 Jan", day: "Friday", route: "Explore Kalam (Ushu Forest, Mahodand Lake)", nightStay: "Kalam" },
-  { date: "17 Jan", day: "Saturday", route: "Return: Kalam → Khanpur Dam → Islamabad → Lahore", nightStay: "Lahore" },
-  { date: "18 Jan", day: "Sunday", route: "Explore Lahore (Food & Sightseeing)", nightStay: "Lahore" },
-  { date: "19 Jan", day: "Monday", route: "Departure: Shalimar Express (7:00 AM) → Karachi", nightStay: "On Train" },
-  { date: "20 Jan", day: "Tuesday", route: "Arrival in Karachi (3:00 AM)", nightStay: "Home Sweet Home" },
+  { date: "17 Jan", day: "Saturday", route: "Return: Kalam → Khanpur Dam → Islamabad", nightStay: "To Be Decided" },
+  { date: "18 Jan", day: "Sunday", route: "To Be Decided", nightStay: "To Be Decided" },
+  { date: "19 Jan", day: "Monday", route: "To Be Decided", nightStay: "Lahore" },
+  { date: "20 Jan", day: "Tuesday", route: "Shalimar Express (7:00 AM) --> Karachi", nightStay: "On Train" },
+  { date: "21 Jan", day: "Wednesday", route: "Arrival in Karachi (3:00 AM)", nightStay: "Home Sweet Home" },
 ];
 
 const Itinerary = () => {
