@@ -19,7 +19,7 @@ const checklistData = [
     icon: <Car className="w-6 h-6 text-primary" />,
     items: [
       { name: 'Torch / Flashlight', description: 'Useful during night stops and emergencies' },
-      { name: 'Large Garbage Bags (2-3)', description: 'For trash and dirty laundry during the trip', critical: true },
+      { name: 'Large Garbage Bags (5-7)', description: 'For trash and dirty laundry during the trip', critical: true },
       { name: 'Sunglasses', description: 'Snow glare can be blinding - protect your eyes' },
       { name: 'Snacks & Energy Bars', description: 'Quick energy during long drives' },
     ],
