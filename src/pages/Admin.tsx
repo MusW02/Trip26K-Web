@@ -7,10 +7,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { toast } from "sonner";
 import Navigation from "@/components/Navigation";
 
-// 👇 PASTE YOUR KEYS HERE (Keep the quote marks!)
-const SERVICE_ID = "service_c6pcn5p";   // e.g. "service_z49l2"
-const TEMPLATE_ID = "template_42ay7mq"; // e.g. "template_8a72b"
-const PUBLIC_KEY = "wh6w1b5Du4kZh91ql";   // e.g. 
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 const Admin = () => {
   const [password, setPassword] = useState("");
