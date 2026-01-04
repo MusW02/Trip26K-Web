@@ -1,4 +1,4 @@
-import { Mountain, MapPin, Users } from "lucide-react";
+import { Mountain, MapPin, Users, CheckSquare } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import TravelerCard from "@/components/TravelerCard";
@@ -47,6 +47,13 @@ const Index = () => {
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-secondary text-secondary-foreground font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
               >
                 Cost Breakdown
+              </Link>
+              <Link
+                to="/checklist"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-accent text-accent-foreground font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+              >
+                <CheckSquare className="w-5 h-5" />
+                Packing Checklist
               </Link>
             </div>
           </div>

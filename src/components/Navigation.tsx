@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Mountain, MapPin, Calculator, Home } from "lucide-react";
+import { Mountain, MapPin, Calculator, Home, CheckSquare } from "lucide-react";
 
 const Navigation = () => {
   const location = useLocation();
@@ -8,6 +8,8 @@ const Navigation = () => {
     { path: "/", label: "Home", icon: Home },
     { path: "/itinerary", label: "Itinerary", icon: MapPin },
     { path: "/costs", label: "Costs", icon: Calculator },
+    { path: '/checklist', label: 'Checklist', icon: CheckSquare }, // ADD THIS LINE
+
   ];
 
   return (

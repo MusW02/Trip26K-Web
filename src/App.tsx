@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Itinerary from "./pages/Itinerary";
 import Costs from "./pages/Costs";
 import NotFound from "./pages/NotFound";
+import Checklist from './pages/Checklist';
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/itinerary" element={<Itinerary />} />
           <Route path="/costs" element={<Costs />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/checklist" element={<Checklist />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </HashRouter>
