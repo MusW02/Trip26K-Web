@@ -34,7 +34,7 @@ const Admin = () => {
     setLogs([]);
 
     // 1. Precise Time Calculation
-    const tripDate = new Date("2026-01-09T00:00:00"); // Start of the trip day
+    const tripDate = new Date("2026-01-09T22:00:00"); // Start of the trip day
     const today = new Date();
     const diffMs = tripDate.getTime() - today.getTime(); // Difference in milliseconds
 
