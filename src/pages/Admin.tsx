@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { travelers } from "@/data/travelers";
 import emailjs from "@emailjs/browser";
 import { Button } from "@/components/ui/button";
@@ -17,6 +17,16 @@ const Admin = () => {
   const [loading, setLoading] = useState(false);
   const [logs, setLogs] = useState<string[]>([]);
 
+  // 🔍 DEBUG: Print keys to console on load
+  useEffect(() => {
+    console.log("--------------- ENV DEBUG ---------------");
+    console.log("Service ID:", SERVICE_ID ? "✅ Loaded" : "❌ MISSING");
+    console.log("Template ID:", TEMPLATE_ID ? "✅ Loaded" : "❌ MISSING");
+    console.log("Public Key:", PUBLIC_KEY ? `✅ Loaded (${PUBLIC_KEY.length} chars)` : "❌ MISSING");
+    console.log("Raw Public Key:", `'${PUBLIC_KEY}'`); // Check for hidden spaces
+    console.log("-----------------------------------------");
+  }, []);
+
   // Simple Password Check
   const handleLogin = () => {
     if (password === "1234") { 
@@ -28,6 +38,12 @@ const Admin = () => {
   };
 
   const handleBroadcast = async () => {
+    // 🔍 DEBUG: Print precise values before sending
+    console.log("🚀 ATTEMPTING SEND WITH:");
+    console.log("Service:", SERVICE_ID);
+    console.log("Template:", TEMPLATE_ID);
+    console.log("Public Key:", PUBLIC_KEY);
+
     if (!confirm("Are you sure you want to email EVERYONE?")) return;
     
     setLoading(true);
@@ -68,7 +84,7 @@ const Admin = () => {
         successCount++;
         setLogs(prev => [...prev, `✅ Sent to ${person.name}`]);
       } catch (error: any) {
-        console.error(error);
+        console.error("❌ EMAILJS ERROR:", error);
         setLogs(prev => [...prev, `❌ Failed: ${person.name}`]);
       }
     }
@@ -76,6 +92,7 @@ const Admin = () => {
     setLoading(false);
     if (successCount > 0) toast.success(`Sent ${successCount} emails!`);
   };
+  
   if (!isAuthenticated) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
